@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Valentine's App</title>
+</head>
+<body class="flex items-start pt-20 justify-center h-screen bg-gray-100 relative">
+    <div id="heartsContainer"></div>
+    <section class="flex flex-col items-center justify-center gap-8">
+        <article>
+            <img src="./img/avatar-question.webp" alt="" class="w-96 rounded-full">
+        </article>
+        <div class="question">
+            <!-- We ask the question -->
+            <h3 class="font-black text-3xl">Would you like to date me tonight?</h3>
+        </div>
+        <article class="answers flex gap-48">
+            <!-- If the user say Yes, the outcome would be to show a happy image and hearts jumping on the screen -->
+            <button class="yes text-3xl bg-green-700 text-stone-200 p-3 rounded-md cursor-pointer">Yes</button>
+            <!-- If the user say No, the outcome would be to show a sad image and a make the Yes Button larger and the No button smaller -->
+            <button class="no text-3xl bg-red-600 text-slate-200 p-3 rounded-md cursor-pointer">No</button>
+        </article>
+    </section>
+</body>
+</html>
